@@ -1,0 +1,47 @@
+.logoutBtn{
+    color: rgb(216, 216, 216);
+}
+.logoutBtn:hover{
+    color: rgb(209, 234, 255);
+}
+
+.home-section-container{
+    background-color: rgba(209, 209, 209, 0.726);
+    min-height: 95vh;
+    padding: 2em 1em;
+}
+.form-control{
+    box-shadow:none !important; 
+    border: 1px solid rgb(197, 197, 197) !important;
+}
+
+@mixin btnstyles($bgColor,$borderColor,$hoverColor)
+{
+    background-color:$bgColor;
+    color: white;
+    padding: 0.4em;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    font-size: 0.9em;
+    &:hover{
+        background-color: $hoverColor;
+    }
+}
+//for user create ticket
+.create-ticket-btn{
+    @include btnstyles( rgb(90, 20, 221),blueviolet ,rgb(80, 16, 201) )
+}
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button{
+    display: none;
+}
+
+
+//admin
+
+.task-assign-btn{
+    @include btnstyles(rgb(26, 214, 8),rgb(45, 235, 20) ,rgb(42, 240, 52) )
+}
+.status-btn{
+    @include btnstyles(rgb(143, 13, 194),rgb(143, 13, 194) , rgb(175, 47, 226))
+}

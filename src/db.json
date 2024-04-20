@@ -1,0 +1,137 @@
+{
+  "users": [
+    {
+      "name": "supporter",
+      "email": "supporter@gmail.com",
+      "password": 22222222,
+      "role": "supporter",
+      "id": "0d76"
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": 11111111,
+      "role": "admin",
+      "id": "5c13"
+    },
+    {
+      "id": "11d5",
+      "name": "user",
+      "email": "abcd@gmail.com",
+      "password": "12341234",
+      "role": "user"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "71ce",
+      "user": "abcd@gmail.com",
+      "passengerName": "abcd",
+      "fromStation": "Pune",
+      "toStation": "Kolhapur",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "canceled",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "72ce",
+      "user": "abcd@gmail.com",
+      "passengerName": "abcd",
+      "fromStation": "Pune",
+      "toStation": "Kolhapur",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "71qe",
+      "user": "xyz@gmail.com",
+      "passengerName": "xyz",
+      "fromStation": "Kolhapur",
+      "toStation": "Pune",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "waitlisted",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "8850",
+      "user": "abcde@gmail.com",
+      "passengerName": "Rushi",
+      "fromStation": "Pune",
+      "toStation": "Kolhapur",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "6dfb",
+      "user": "q@gmail.com",
+      "passengerName": "Bottas",
+      "fromStation": "Mumbai",
+      "toStation": "Pune",
+      "passengerAge": "21",
+      "gender": "female",
+      "status": "waitlisted",
+      "taskAssigned": "not Assigned"
+    },
+    {
+      "id": "cf81",
+      "user": "q@gmail.com",
+      "passengerName": "Max",
+      "fromStation": "pune",
+      "toStation": "benglore",
+      "passengerAge": "23",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "not Assigned"
+    },
+    {
+      "id": "962c",
+      "user": "q@gmail.com",
+      "passengerName": "lewis hamilton",
+      "fromStation": "Delhi",
+      "toStation": "Kolhapur",
+      "passengerAge": "23",
+      "gender": "male",
+      "status": "waitlisted",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "27e7",
+      "user": "q@gmail.com",
+      "passengerName": "Pj",
+      "fromStation": "kolhapur",
+      "toStation": "kagal",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "not Assigned"
+    },
+    {
+      "id": "4d5d",
+      "user": "q@gmail.com",
+      "passengerName": "Dom",
+      "fromStation": "kagal",
+      "toStation": "Pune",
+      "passengerAge": "24",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "Assigned"
+    },
+    {
+      "id": "3cca",
+      "user": "q@gmail.com",
+      "passengerName": "Dango",
+      "fromStation": "a",
+      "toStation": "b",
+      "passengerAge": "22",
+      "gender": "male",
+      "status": "confirmed",
+      "taskAssigned": "Assigned"
+    }
+  ]
+}

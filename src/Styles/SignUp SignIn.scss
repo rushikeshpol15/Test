@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+                /* SignUP  */
+    
+.sign-up-outer-container{
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgba(203, 163, 235, 0.452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-box{
+    margin-top: 100px;
+    padding: 1em 1.5em;
+    /* border: 1px solid grey; */
+    border-radius: 7px;
+    background-color: white;
+}
+.emailId-container{
+    border: 1px solid grey;
+    width: 350px;
+    border-radius: 4px;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0.5em;
+    padding: 0.1em 0.4em ;
+}
+.emailId-input,.password-input,.confirm-password-input,.tel-input{
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1.1em;
+}
+
+.email-label,.password-label,.confirm-password-label,.tel-label{
+    position: absolute;
+    top: 12px;
+    left: 32px;
+    font-size: 1.1em;
+    transition: 0.3s;
+    color: grey;
+}
+.emailId-input:focus ~ .email-label,
+.emailId-input:not(:placeholder-shown) ~  .email-label{
+    top: 0px;
+    font-size: 0.7em;
+}
+.password-input:focus ~ .password-label,
+.password-input:not(:placeholder-shown) ~  .password-label{
+    top: 0px;
+    font-size: 0.7em;
+}
+.confirm-password-input:focus ~ .confirm-password-label,
+.confirm-password-input:not(:placeholder-shown) ~  .confirm-password-label{
+    top: 0px;
+    font-size: 0.7em;
+}
+.tel-input:focus ~ .tel-label,
+.tel-input:not(:placeholder-shown) ~  .tel-label{
+    top: 0px;
+    font-size: 0.7em;
+}
+.sign-up-button{
+    display: block;
+    width: 100%;
+    margin: 1.1em 0;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(23, 115, 236);
+    padding: 1em 0;
+    color: white;
+    font-size: 1.1em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.sign-up-button:hover{
+    background-color: rgb(5, 93, 209);
+}
+.sign-in-span-container{
+    display: flex;
+    justify-content: space-between;
+}
+.sign-in-span{
+    color: rgb(14, 82, 209);
+    cursor: pointer;
+    font-weight: bold;
+}
+.hr-lines-container{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+.horizontal-line{
+    border-bottom: 2px solid grey;
+    width: 45%;
+}
+.sign-in-with-container{
+    display: flex;
+    border: 1px solid grey;
+    margin: 1.5em 0;
+    border-radius: 4px;
+    align-items: center;
+    gap: 2em;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+}
+.sign-in-with-img{
+    width: 30px;
+}
+@media screen and (max-width:370px) {
+.sign-up-box{
+    padding: 1em 0.4em;
+}
+.emailId-container{
+width: 95%;
+}
+
+.emailId-container{
+width: 300px;
+}
+}

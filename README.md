@@ -122,7 +122,7 @@ the structure of json file is -
 ![App Screenshot](screenshots/signin2.jpg);
 
 - above is the sign in page which also have validation like email password if user inputed wrong credential the alert pop up will get shown.
-
+- user,Tech Supporter and admin can login through this age 
 
 ### user home page 
 ![App Screenshot](screenshots/user1.jpg);
@@ -137,7 +137,6 @@ the structure of json file is -
 
 - In the page of Your Tickets the user can see his created tickets with the status of that ticket 
 
-### for the  table the react datatable component is used 
 
 
 ### admin home page 

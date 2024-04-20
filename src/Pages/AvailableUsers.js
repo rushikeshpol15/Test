@@ -145,8 +145,8 @@ function AvailableUsers()
                             <Link  className="nav-link active">Available Users</Link>
 
                         </div>
-                        {/* <div className=" ms-auto text-light">{email}</div> */}
-                        <div className=" ms-auto logoutBtn" style={{cursor:'pointer'}} onClick={handleLogOut}>Log Out</div>
+                        <div className=" ms-auto text-light">{email}</div>
+                        <div className=" ms-sm-3 logoutBtn" style={{cursor:'pointer'}} onClick={handleLogOut}>Log Out</div>
 
                     </div>
                 </div>

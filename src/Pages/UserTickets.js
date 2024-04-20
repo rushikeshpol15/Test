@@ -121,8 +121,8 @@ function UserTickets()
                             <Link to='/userhome' className="nav-link ">Home</Link>
                             <Link  className="nav-link active">Your Tickets</Link>
                         </div>
-                        {/* <div className=" ms-auto text-light">{email}</div> */}
-                        <div className=" ms-auto logoutBtn" style={{cursor:'pointer'}} onClick={handleLogOut}>Log Out</div>
+                        <div className=" ms-auto text-light">{email}</div>
+                        <div className=" ms-sm-3 logoutBtn" style={{cursor:'pointer'}} onClick={handleLogOut}>Log Out</div>
 
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import "../Styles/SignUp SignIn.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser,faEye } from "@fortawesome/free-regular-svg-icons";
+import { faUser,faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import google from "./google.png";
@@ -162,7 +162,9 @@ function SignUp() {
                     <FontAwesomeIcon icon={faLock} style={{color: "#0a0a0a",}} />
                     <input type={(passwordState)?"text":"password"} placeholder=" " value={password} onChange={handlePassword} id="password" className="password-input"/>
                     <label htmlFor="password" className="password-label">Password</label>
-                    <FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />
+                { passwordState ? <FontAwesomeIcon icon={faEyeSlash} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />
+                    :<FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />}
+
                 </div>
                 {invalidPassword?<div className="text-danger">Password must be 8 characters long</div>:null}
 
@@ -170,7 +172,8 @@ function SignUp() {
                     <FontAwesomeIcon icon={faLock} style={{color: "#0a0a0a",}} />
                     <input type={(confirmPasswordState)?"text":"password"} placeholder=" " value={confirmPassword} onChange={(e)=>{setConfirmPassword(e.target.value)}} id="confirmPassword" className="confirm-password-input"/>
                     <label htmlFor="confirmPassword" className="confirm-password-label">Confirm Password</label>
-                    <FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setConfirmPasswordState(!confirmPasswordState)}}/>
+                    {confirmPasswordState ? <FontAwesomeIcon icon={faEyeSlash} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setConfirmPasswordState(!confirmPasswordState)}}/>
+                    :<FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setConfirmPasswordState(!confirmPasswordState)}}/>}
                 </div>
                 
                 <button className="sign-up-button" onClick={handleSignUp}>Sign Up</button>

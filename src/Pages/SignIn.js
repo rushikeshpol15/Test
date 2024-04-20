@@ -1,6 +1,6 @@
 import "../Styles/SignUp SignIn.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser,faEye } from "@fortawesome/free-regular-svg-icons";
+import { faUser,faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import google from "./google.png";
@@ -158,7 +158,8 @@ function SignIn(params) {
                     <FontAwesomeIcon icon={faLock} style={{color: "#0a0a0a",}} />
                     <input type={(passwordState)?"text":"password"} placeholder=" " onChange={handlePassword} id="password" className="password-input"/>
                     <label htmlFor="password" className="password-label">Password</label>
-                    <FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />
+                   {passwordState ? <FontAwesomeIcon icon={faEyeSlash} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />
+                    :<FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />}
                 </div>
                 {invalidPassword?<div className="text-danger">Password must be 8 characters long</div>:null}
 

@@ -190,3 +190,17 @@ the structure of json file is -
 - Tech Supporter have authority to change the status of ticket 
 - In above image as shown the tech supporter can change the status of ticket through modal
 
+## HTTP Request used
+  - get
+  - post
+  - put 
+  - delete
+
+### Redux toolkit use 
+
+- Redux global state management library is used for state management 
+- the all user details from json file users array is fetched and stored in redux state when the url is get change
+- all the tickets details is stored in redux state 
+
+# Problem during using redux 
+- whenever page refresh all state comes to initial value

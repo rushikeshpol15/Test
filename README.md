@@ -202,5 +202,4 @@ the structure of json file is -
 - the all user details from json file users array is fetched and stored in redux state when the url is get change
 - all the tickets details is stored in redux state 
 
-# Problem during using redux 
-- whenever page refresh all state comes to initial value
+

@@ -48,7 +48,7 @@ Endpoints:
 http://localhost:3000/
 
 - so all the api's handled with this api Endpoints
-- in it recommended that run this json server on 3000 port
+-It is recommended that run the json server for db.json file available in src folder on 3000 port for seamless Api requests
 
 the structure of json file is -
 
@@ -122,7 +122,7 @@ the structure of json file is -
 ![App Screenshot](screenshots/signin2.jpg);
 
 - above is the sign in page which also have validation like email password if user inputed wrong credential the alert pop up will get shown.
-- user,Tech Supporter and admin can login through this age 
+- user,Tech Supporter and admin can login through this page
 
 ### user home page 
 ![App Screenshot](screenshots/user1.jpg);

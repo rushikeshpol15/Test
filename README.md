@@ -48,7 +48,7 @@ Endpoints:
 http://localhost:3000/
 
 - so all the api's handled with this api Endpoints
--It is recommended that run the json server for db.json file available in src folder on 3000 port for seamless Api requests
+-It is recommended that run the json server for db.json file available in src folder on 3000 port for seamless Api requests otherwise api don't work
 
 the structure of json file is -
 

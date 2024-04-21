@@ -7,7 +7,7 @@
 ### Accounts -
 - Three types of Accounts
     
-    1. Admin -
+1. Admin -
 
     - Admin Have Authority to assign task to tech supporter.
     - Admin can delete user's Accounts
@@ -15,7 +15,7 @@
     - email :admin@gmail.com
     - pass :11111111
 
-    2. Tech Supporter -
+2. Tech Supporter -
        
     - Tech Supporter can change the status of users Ticket (example - to confirm ticket)
     - credential :
@@ -23,7 +23,7 @@
     - pass :22222222
 
    
-    3. User -
+3. User -
 
     - User can create Tickets 
     - User can see the list of created tickets and see the status of that ticket

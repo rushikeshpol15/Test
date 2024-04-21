@@ -12,15 +12,25 @@
     - Admin Have Authority to assign task to tech supporter.
 
     - Admin can delete user's Accounts
+    - credential :
+     - email :admin@gmail.com
+     - pass :11111111
 
     2. Tech Supporter -
 
     - Tech Supporter can change the status of users Ticket (example - to confirm ticket)
+    - credential :
+    - email :supporter@gmail.com
+    - pass :22222222
 
     3. User -
 
     - User can create Tickets 
     - User can see the list of created tickets and see the status of that ticket
+    - credential:
+    - email :abcd@gmail.com
+    - pass :12341234
+    - you can create new user account in sign up page
 
 ## Technologies Used -
 

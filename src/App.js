@@ -16,6 +16,8 @@ import AvailableUsers from './Pages/AvailableUsers';
 import UserHome from './Pages/UserHome';
 import AdminHome from './Pages/AdminHome';
 import SuppoterHome from './Pages/SupporterHome';
+import PrivateHOC from './Pages/PrivateHOC';
+import PrivateHOCComponent from './Pages/PrivateHOC';
 
 function App() {
   let location=useLocation();
@@ -41,13 +43,13 @@ function App() {
             <Route path='/' element={<SignUp/>}/>
             <Route path='/signin' element={<SignIn/>}/>
             
-            <Route path='/userhome' element={<UserHome/>}/>
-            <Route path='/user-tickets' element={<UserTickets/>}/>
+            <Route path='/userhome' element={<PrivateHOCComponent role='user' cmp={UserHome}/>}/>
+            <Route path='/user-tickets' element={<PrivateHOCComponent role='user' cmp={UserTickets}/>}/>
 
-            <Route path='/adminhome' element={<AdminHome/>}/>
-            <Route path='/available-users' element={<AvailableUsers/>}/>
+            <Route path='/adminhome' element={<PrivateHOCComponent role='admin' cmp={AdminHome}/>}/>
+            <Route path='/available-users' element={<PrivateHOCComponent role='admin' cmp={AvailableUsers}/>}/>
 
-            <Route path='/supporterhome' element={<SuppoterHome/>}/>
+            <Route path='/supporterhome' element={<PrivateHOCComponent role='supporter' cmp={SuppoterHome}/>}/>
 
 
           </Routes>

@@ -22,12 +22,12 @@ function SuppoterHome()
         setRole(localStorage.getItem('role'));
     },[]);
 
-    useEffect(()=>{
-        if(localStorage.getItem('email')==null)
-        {
-            navigate('/signin')
-        }
-    },[])
+    // useEffect(()=>{
+    //     if(localStorage.getItem('email')==null)
+    //     {
+    //         navigate('/signin')
+    //     }
+    // },[])
 
    
 

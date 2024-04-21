@@ -1,26 +1,36 @@
 
 # Assessment
 
-##Ticket Management System 
+## Ticket Management System 
 # workflow -
 
 ### Accounts -
 - Three types of Accounts
     
-    1. Admin -
+1. Admin -
 
     - Admin Have Authority to assign task to tech supporter.
-
     - Admin can delete user's Accounts
+    - credential :
+    - email :admin@gmail.com
+    - pass :11111111
 
-    2. Tech Supporter -
-
+2. Tech Supporter -
+       
     - Tech Supporter can change the status of users Ticket (example - to confirm ticket)
+    - credential :
+    - email :supporter@gmail.com
+    - pass :22222222
 
-    3. User -
+   
+3. User -
 
     - User can create Tickets 
     - User can see the list of created tickets and see the status of that ticket
+    - credential:
+    - email :abcd@gmail.com
+    - pass :12341234
+    - you can create new user account in sign up page
 
 ## Technologies Used -
 
@@ -43,12 +53,20 @@
 
 - The Backend Database is a JSON File db.Js
 - which is handled by json Server
+- so install json server
 - currently in this project the server is running on 3000 port
 Endpoints:
 http://localhost:3000/
 
 - so all the api's handled with this api Endpoints
-- in it recommended that run this json server on 3000 port
+-It is recommended that run the json server for db.json file available in src folder on 3000 port for seamless Api requests otherwise api don't work
+
+- 1st command of project : 
+json-server --watch db.json
+
+- then run the react server:  npm start
+
+#### Note - to run json file go in src folder and then run 1st command 
 
 the structure of json file is -
 
@@ -122,7 +140,7 @@ the structure of json file is -
 ![App Screenshot](screenshots/signin2.jpg);
 
 - above is the sign in page which also have validation like email password if user inputed wrong credential the alert pop up will get shown.
-
+- user,Tech Supporter and admin can login through this page
 
 ### user home page 
 ![App Screenshot](screenshots/user1.jpg);
@@ -137,7 +155,6 @@ the structure of json file is -
 
 - In the page of Your Tickets the user can see his created tickets with the status of that ticket 
 
-### for the  table the react datatable component is used 
 
 
 ### admin home page 
@@ -190,7 +207,7 @@ the structure of json file is -
 - Tech Supporter have authority to change the status of ticket 
 - In above image as shown the tech supporter can change the status of ticket through modal
 
-## HTTP Request used
+## HTTP Methods used
   - get
   - post
   - put 
@@ -200,7 +217,5 @@ the structure of json file is -
 
 - Redux global state management library is used for state management 
 - the all user details from json file users array is fetched and stored in redux state when the url is get change
-- all the tickets details is stored in redux state 
-
-# Problem during using redux 
-- whenever page refresh all state comes to initial value
+- all the tickets details is stored in redux state
+- the redux state is updated of the data comes from api 

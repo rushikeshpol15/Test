@@ -26,12 +26,12 @@ function UserTickets()
         getUserTickets();
     },[]);
 
-    useEffect(()=>{
-        if(localStorage.getItem('email')==null)
-        {
-            navigate('/signin')
-        }
-    },[])
+    // useEffect(()=>{
+    //     if(localStorage.getItem('email')==null)
+    //     {
+    //         navigate('/signin')
+    //     }
+    // },[])
     useEffect(()=>{
         let temp=[];
 

@@ -21,12 +21,12 @@ function AvailableUsers()
         fetchData();
     },[]);
 
-    useEffect(()=>{
-        if(localStorage.getItem('email')==null)
-        {
-            navigate('/signin')
-        }
-    },[])
+    // useEffect(()=>{
+    //     if(localStorage.getItem('email')==null)
+    //     {
+    //         navigate('/signin')
+    //     }
+    // },[])
 
     async function fetchData()
     {

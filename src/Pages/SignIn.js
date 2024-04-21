@@ -63,15 +63,18 @@ function SignIn(params) {
     }
 
     function handlePassword(e)
+    {       
+        setPassword(e.target.value); 
+        setInvalidPassword(false);
+    }
+
+    function handleKeyPress(e)
     {
         if(e.key==='Enter')
         {
             handleSignin();
         }
-        setPassword(e.target.value); 
-        setInvalidPassword(false);
     }
-
 
     function handleSignin()
     {
@@ -156,7 +159,7 @@ function SignIn(params) {
 
                 <div className="emailId-container">
                     <FontAwesomeIcon icon={faLock} style={{color: "#0a0a0a",}} />
-                    <input type={(passwordState)?"text":"password"} placeholder=" " onChange={handlePassword} id="password" className="password-input"/>
+                    <input type={(passwordState)?"text":"password"} placeholder=" " onChange={handlePassword} onKeyDown={handleKeyPress} id="password" className="password-input"/>
                     <label htmlFor="password" className="password-label">Password</label>
                    {passwordState ? <FontAwesomeIcon icon={faEyeSlash} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />
                     :<FontAwesomeIcon icon={faEye} style={{color: "#0d0d0d",cursor:"pointer"}} onClick={()=>{setPasswordState(!passwordState)}} />}

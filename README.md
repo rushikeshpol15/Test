@@ -23,8 +23,6 @@
     - email :supporter@gmail.com
     - pass :22222222
 
-
-
     3. User -
 
     - User can create Tickets 

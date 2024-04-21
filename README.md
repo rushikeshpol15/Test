@@ -43,12 +43,20 @@
 
 - The Backend Database is a JSON File db.Js
 - which is handled by json Server
+- so install json server
 - currently in this project the server is running on 3000 port
 Endpoints:
 http://localhost:3000/
 
 - so all the api's handled with this api Endpoints
 -It is recommended that run the json server for db.json file available in src folder on 3000 port for seamless Api requests otherwise api don't work
+
+- 1st command of project : 
+json-server --watch db.json
+
+- then run the react server:  npm start
+
+#### Note - to run json file go in src folder and then run 1st command 
 
 the structure of json file is -
 
